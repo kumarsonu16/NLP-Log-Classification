@@ -1,0 +1,5 @@
+Benefits of Hybrid Classification
+
+1. Optimized Cost, Performance
+2. Better Accuracy
+3. Scalability

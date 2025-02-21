@@ -1,0 +1,11 @@
+fastapi
+python-dotenv
+groq
+sentence-transformers
+joblib
+pandas
+scikit-learn
+xxhash
+aiohttp
+tf-keras
+python-multipart
