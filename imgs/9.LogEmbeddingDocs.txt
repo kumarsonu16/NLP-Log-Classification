@@ -1,7 +1,9 @@
-Pattern can be detected easily using the python regular expressions. The Question however is our logs might be huge you might have million lines in you logs how do you exactly know what type of unique patterns you have for that you can use clustering so we take this excel file which is an aggregated log and we generate embeddings using let say Bret sentence transformer you can use any embedding model then we can ues DB Scan or any other clustering algorithm to cluster all these logs.
+Patterns in logs can be efficiently detected using Python's regular expressions. However, when dealing with massive log files containing millions of lines, identifying unique patterns becomes challenging. To address this, clustering techniques can be used.  
 
-So it's an unsupervised learning approach, we are not going to provide any Target label because we are not trying to classify thing into out target label.We are trying to classify thing as per the raw text do you see any patterns or any grouping or any clustering that' what we trying to classify so we'll use DB Scan Algorithm to form clusters of all our logs and these clusters when you examine them you will see the text message. Based on text message we can build all types of regular expression.
+The approach involves processing an aggregated log file (e.g., in Excel format) and generating embeddings using a model like BERT Sentence Transformer (or any other suitable embedding model). These embeddings are then clustered using DBSCAN or another clustering algorithm.  
 
+This is an unsupervised learning approach, meaning no target labels are provided. Unlike classification tasks where we assign predefined labels, here, we group log entries based on textual similarity. The goal is to identify patterns, groupings, or clusters within the raw log data.  
 
+By applying DBSCAN, we can form meaningful clusters of log messages. Upon examining these clusters, we can extract representative text messages, which can then be used to build comprehensive regular expressions for pattern detection.  
 
-Note: Log Aggregation should be done by Data Team(Data Engineer)
+Note: Log aggregation should be handled by the Data Engineering team.
